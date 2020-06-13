@@ -1,0 +1,20 @@
+[package]
+name = "rustAnd"
+version = "0.1.0"
+authors = ["max <max@sixthnet.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.2", features = ["full"] }
+#rustls="0.17.0"
+openssl = { version = "0.10.29", features = ["vendored"] }
+#openssl = { version = "0.10.29" }
+reqwest = { version = "0.10", features = ["blocking", "json"] }
+jni = "0.5.2"
+futures = "0.1"
+paho-mqtt = "0.6.0"
+[dependencies.paho-mqtt-sys]
+default-features = false
+version = "0.2"
